@@ -32,7 +32,6 @@ class CameraClick(BoxLayout):
 
 
 class KivyCameraApp(App):
-
     def build(self):
         return CameraClick()
 
