@@ -19,24 +19,8 @@ from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 import time
 
-Builder.load_string('''
-<CameraClick>:
-    orientation: 'vertical'
-    Camera:
-        id: camera
-        resolution: (640, 480)
-        play: False
-    ToggleButton:
-        text: 'Play'
-        on_press: camera.play = not camera.play
-        size_hint_y: None
-        height: '48dp'
-    Button:
-        text: 'Capture'
-        size_hint_y: None
-        height: '48dp'
-        on_press: root.capture()
-''')
+# Builder.load_string('''
+# ''')
 
 
 class CameraClick(BoxLayout):
@@ -51,10 +35,10 @@ class CameraClick(BoxLayout):
         print("Captured")
 
 
-class TestCamera(App):
+class KivyCameraApp(App):
 
     def build(self):
         return CameraClick()
 
 if __name__ == "__main__":
-    TestCamera().run()
+    KivyCameraApp().run()
