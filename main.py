@@ -13,7 +13,7 @@ from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 import time
 
-class CameraClick(BoxLayout):
+class CameraScreen(BoxLayout):
     def capture(self):
         '''
         Function to capture the images and give them the names
@@ -28,7 +28,7 @@ class CameraClick(BoxLayout):
 class PythonCameraApp(App):
 
     def build(self):
-        return CameraClick()
+        return CameraScreen()
 
 if __name__ == "__main__":
     PythonCameraApp().run()
