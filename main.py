@@ -30,10 +30,10 @@ class CameraClick(BoxLayout):
         print("Captured")
 
 
-class KivyCameraApp(App):
+class PythonCameraApp(App):
 
     def build(self):
         return CameraClick()
 
 if __name__ == "__main__":
-    KivyCameraApp().run()
+    PythonCameraApp().run()
