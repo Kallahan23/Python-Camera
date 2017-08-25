@@ -19,10 +19,6 @@ from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
 import time
 
-# Builder.load_string('''
-# ''')
-
-
 class CameraClick(BoxLayout):
     def capture(self):
         '''
