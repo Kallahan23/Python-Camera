@@ -7,4 +7,4 @@ Kivy==1.11.0.dev0
 Kivy-Garden==0.1.4
 Pygments==2.2.0
 requests==2.19.1
-urllib3==1.23
+urllib3==1.26.5
